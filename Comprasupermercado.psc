@@ -52,17 +52,26 @@ Algoritmo CompraSupermercado
 	
 	//c. Calcular el precio total mediante la suma de los precios
 	//de cada conjunto de productos
+
 	precioTotalSuperB = precioTotalLeche + precioTotalManzanas + precioTotalPollo
 	
 	//3. Comparar el precio total de la compra en el supermercado "A"
 	//con el precio total en el supermercado "B"
 	
+	//--> EJERCICIO 1: Modificar esta estructura condicional para que contemple
+	//también la opción de que el precio total de la compra en ambos supermercados
+	//es igual
+	
 	Si precioTotalSuperA > precioTotalSuperB Entonces
 		supermercadoEconomico = "Supermercado B"
-	SiNo
-		supermercadoEconomico = "Supermercado A"
 	FinSi
+	
+		Si precioTotalSuperB > precioTotalSuperA Entonces
+			supermercadoEconomico = "Supermercado A"	
+		FinSi
+		Si precioTotalSuperA = precioTotalSuperB
+		supermercadoEconomico = "No hay supermercado más económico"
+		FinSi
 	//4. Obtener el supermercado donde la compra es más económica
-	Escribir "El supermercado más económico es:"
 	Escribir supermercadoEconomico
 FinAlgoritmo
