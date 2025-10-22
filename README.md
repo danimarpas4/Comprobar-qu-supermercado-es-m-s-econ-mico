@@ -1,2 +1,3 @@
-# Comprobar-qu-supermercado-es-m-s-econ-mico
-Comprobar qué supermercado es más económico
+# Comprobar-que-supermercado-es-mas-economico
+
+Introduciendo los precios de los productos que has comprado, podrás calcular en cuál te sale más barata la compra.
